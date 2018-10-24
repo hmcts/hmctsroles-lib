@@ -21,10 +21,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Generate Library
 
-Run 'ng run package' 
+Run `ng run package`
 
 ## Publish to NPM 
-Run  'NPM publish' 
+Run  `NPM publish` 
 
 
 ## Directive use
