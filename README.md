@@ -39,7 +39,7 @@ roleList - The full set of roles we're checking against
 roleSource  - inline or cookie - this could be a future enhancement where the rolelist is stored in a cookie and not provided in the attribute.
 
 Format use as below:
-<h1 [unlessRole]="'roleA'"  roleList="roleA,roleB,roleC" roleSource="inline">Test unlessRole directive display if false</h1>
+&lth1 [unlessRole]="'roleA'"  roleList="roleA,roleB,roleC" roleSource="inline" &gtTest unlessRole directive display if false&lt/&gt
 
 
 
