@@ -38,8 +38,11 @@ unlessRole - the role we're checking - this can be a comma separated list
 roleList - The full set of roles we're checking against
 roleSource  - inline or cookie - this could be a future enhancement where the rolelist is stored in a cookie and not provided in the attribute.
 
-Format use as below:
-```&lt; h1 [unlessRole]="'roleA'"  roleList="roleA,roleB,roleC" roleSource="inline" &gt; Test unlessRole directive display if false &lt;/&gt;```
+
+
+```
+&lt; h1 [unlessRole]="'roleA'"  roleList="roleA,roleB,roleC" roleSource="inline" &gt; Test unlessRole directive display if false &lt;/&gt;
+```
 
 
 
@@ -49,4 +52,5 @@ Removes or adds element based on role matching in provided rolelist.
 roleAccess and roleList are provided as input arrays
 roleSource  - inline or cookie - this could be a future enhancement where the rolelist is stored in a cookie and not provided in the attribute..
 
-```&lt; h1 *roleAccess="['xRoleA'];roleList:['RoleA','RoleB','RoleC'];roleSource:'inline'"  &gt; Test roleAccess directive - display if true &lt;/&gt;```
+```
+&lt; h1 *roleAccess="['xRoleA'];roleList:['RoleA','RoleB','RoleC'];roleSource:'inline'"  &gt; Test roleAccess directive - display if true &lt;/&gt;```
