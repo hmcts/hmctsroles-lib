@@ -69,8 +69,6 @@ export class RolesDirective implements OnInit {
 
 
   checkRoleisValid() {
-    // return true;
-    //return this.roles.some(r => this.roleAccess.split(',').includes(r))
     return this.roles.some(r => this._roleAccess.includes(r))
   }
 }

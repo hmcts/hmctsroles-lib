@@ -18,10 +18,31 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Generate Library
 
-## Further help
+Run 'ng run package' 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Publish to NPM 
+Run  'NPM publish' 
+
+
+## Directive use
+
+Examble of directive use
+#unlessRole
+Displays component / element unless role matches role provided in roleList
+In other words the fefault action is to display unless a match is found
+There are 3 attributes,  
+unlessRole - the role we're checking - this can be a comma separated list
+roleList - The full set of roles we're checking against
+roleSource  - inline or cookie - this could be a future enhancement where the rolelist is stored in a cookie and not provided in the attribute.
+
+Format use as below:
+<h1 [unlessRole]="'roleA'"  roleList="roleA,roleB,roleC" roleSource="inline">Test unlessRole directive display if false</h1>
+
+
+
+#roleAccess
+This is a structural directive.
+<h1 *roleAccess="['xRoleA'];roleList:['RoleA','RoleB','RoleC'];roleSource:'inline'"  >Test roleAccess directive - display if true</h1>

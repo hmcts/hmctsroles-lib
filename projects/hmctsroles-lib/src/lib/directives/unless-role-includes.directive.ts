@@ -29,7 +29,10 @@ export class UnlessRoleIncludesDirective implements OnInit {
     let authorised
     //this.roles = this.auth.getUserRoles()
     this.roles = this.roleList.split(',')
+    //this.roles = this.roleList;
     console.log('after split', this.roles)
+
+
     authorised = this.checkRoleisValid()
     console.log('auth', authorised)
     if (authorised)
