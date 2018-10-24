@@ -47,6 +47,6 @@ Format use as below:
 This is a structural directive.
 Removes or adds element based on role matching in provided rolelist.
 roleAccess and roleList are provided as input arrays
-roleSource  - inline or cookie - this could be a future enhancement where the rolelist is stored in a cookie and not provided in the attribute.
+roleSource  - inline or cookie - this could be a future enhancement where the rolelist is stored in a cookie and not provided in the attribute..
 
 &lt; h1 *roleAccess="['xRoleA'];roleList:['RoleA','RoleB','RoleC'];roleSource:'inline'"  &gt; Test roleAccess directive - display if true &lt;/&gt;
