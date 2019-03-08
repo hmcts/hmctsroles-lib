@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hmctsroles-lib-app';
+
+  public myRoleList = 'roleA2, roleB2'
 }

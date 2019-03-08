@@ -22,26 +22,16 @@ export class UnlessRoleIncludesDirective implements OnInit {
 
   ngOnInit() {
 
-    console.log('@@@@@@@unlessRole', this.unlessRole)
-    console.log('@@@@@@@roleList', this.roleList)
-    console.log('@@@@@@@roleSource', this.roleSource)
-
     let authorised
-    //this.roles = this.auth.getUserRoles()
     this.roles = this.roleList.split(',')
-    //this.roles = this.roleList;
-    console.log('after split', this.roles)
-
 
     authorised = this.checkRoleisValid()
     console.log('auth', authorised)
     if (authorised)
-      // this.elr.nativeElement.style.visibility = 'hidden'
-      this.elr.nativeElement.style.color = 'green';
+      this.elr.nativeElement.style.visibility = 'hidden'
 
     else
-      // this.elr.nativeElement.style.visibility = 'visible'
-      this.elr.nativeElement.style.color = 'red';
+      this.elr.nativeElement.style.visibility = 'visible'
 
   }
 

@@ -55,10 +55,9 @@ export class RolesDirective implements OnInit {
     else
       this.roles = this._roleList;
 
-    console.log('roleList: ', this.roles);
+
     authorised = this.checkRoleisValid()
 
-    console.log('roles.directive authorised:', authorised)
     if (authorised)
       this.viewContainerRef.createEmbeddedView(this.templateRef)
 
