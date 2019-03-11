@@ -26,7 +26,7 @@ export class UnlessRoleIncludesDirective implements OnInit {
     this.roles = this.roleList.split(',')
 
     authorised = this.checkRoleisValid()
-    console.log('auth', authorised)
+    //console.log('auth', authorised)
     if (authorised)
       this.elr.nativeElement.style.visibility = 'hidden'
 

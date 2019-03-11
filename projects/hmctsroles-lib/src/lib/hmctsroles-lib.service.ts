@@ -21,7 +21,7 @@ export class HmctsrolesLibService {
     let roles = [];
     let ck = this.cookieService.get('__roles__');
     if (ck != null) roles = ck.split(',');
-    console.log('@@COOKIE:', roles)
+    //console.log('@@COOKIE:', roles)
     return roles
 
   }
