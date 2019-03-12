@@ -4,11 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "build_roleslib": "ng build --prod hmctsroles-lib",
+    "build": "ng build --prod hmctsroles-lib",
+    "copy": "cp  ./dist/* ../rpa-access-managment-lib/*",
     "npm_pack": "cd dist/hmctsroles-lib && npm pack",
     "package": "npm run build_roleslib && npm run npm_pack",
     "publishgit": "publish-to-git"
