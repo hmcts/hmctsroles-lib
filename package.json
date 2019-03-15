@@ -6,10 +6,7 @@
     "start": "ng serve",
     "test": "ng test",
     "lint": "ng lint",
-    "build": "ng build --prod hmctsroles-lib",
-    "copy": "cp  ./dist/* ../rpa-access-managment-lib/*",
-    "npm_pack": "cd dist/hmctsroles-lib && npm pack",
-    "package": "npm run build_roleslib && npm run npm_pack",
+    "build:package": "ng build --prod hmctsroles-lib",
     "publishgit": "publish-to-git"
   },
   "private": true,
