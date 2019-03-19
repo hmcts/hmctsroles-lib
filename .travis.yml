@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- 8.11.1s
+- 8.11.1
 before_deploy:
 - npm i
 - npm run build:package
