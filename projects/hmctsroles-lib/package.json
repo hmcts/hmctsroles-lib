@@ -6,5 +6,5 @@
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
     "ngx-cookie": "^4.0.2"
   },
-  "author": "HMCTS"
+  "author": "HCMTS"
 }
