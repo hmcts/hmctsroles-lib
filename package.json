@@ -4,8 +4,6 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "test": "ng test",
-    "lint": "ng lint",
     "build:package": "ng build --prod hmctsroles-lib",
     "publishgit": "publish-to-git"
   },
