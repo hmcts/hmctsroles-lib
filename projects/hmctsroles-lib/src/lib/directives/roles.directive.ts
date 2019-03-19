@@ -1,7 +1,6 @@
-import {
-  Directive, ViewContainerRef, TemplateRef, Input, OnInit
-} from "@angular/core";
-import { HmctsrolesLibService } from "../hmctsroles-lib.service";
+import { Directive, ViewContainerRef, TemplateRef, Input, OnInit } from "@angular/core";
+
+//import { HmctsrolesLibService } from "../hmctsroles-lib.service";
 
 
 
@@ -44,17 +43,13 @@ export class RolesDirective implements OnInit {
   constructor(
     private viewContainerRef: ViewContainerRef,
     private templateRef: TemplateRef<any>,
-    private auth: HmctsrolesLibService
+    // private auth: HmctsrolesLibService
   ) { }
 
   ngOnInit() {
     let authorised
 
-    if (this._roleSource == 'cookie')
-      this.roles = this.auth.getUserRoles()
-    else
-      this.roles = this._roleList;
-
+    this.roles = this._roleList;
 
     authorised = this.checkRoleisValid()
 
