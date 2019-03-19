@@ -56,4 +56,4 @@ roleSource  - inline or cookie - this could be a future enhancement where the ro
 ``
 &lt; h1 *roleAccess="['xRoleA'];roleList:['RoleA','RoleB','RoleC'];roleSource:'inline'"  &gt; Test roleAccess directive - display if true &lt;/&gt;``
 
-..
+...
