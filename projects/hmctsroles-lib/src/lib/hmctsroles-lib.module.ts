@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { HmctsrolesLibComponent } from './hmctsroles-lib.component';
+// import { HmctsrolesLibComponent } from './hmctsroles-lib.component';
 import { RolesDirective } from './directives/roles.directive';
 import { UnlessRoleIncludesDirective } from './directives/unless-role-includes.directive';
 import { CookieModule } from 'ngx-cookie';
@@ -8,7 +8,7 @@ import { CookieModule } from 'ngx-cookie';
   imports: [
     CookieModule.forRoot()
   ],
-  declarations: [HmctsrolesLibComponent, RolesDirective, UnlessRoleIncludesDirective],
-  exports: [HmctsrolesLibComponent, RolesDirective, UnlessRoleIncludesDirective]
+  declarations: [RolesDirective, UnlessRoleIncludesDirective],
+  exports: [RolesDirective, UnlessRoleIncludesDirective]
 })
 export class HmctsrolesLibModule { }
