@@ -1,1 +1,0 @@
-This is an alternative location where library package can be published

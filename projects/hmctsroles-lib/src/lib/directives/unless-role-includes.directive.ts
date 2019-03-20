@@ -1,5 +1,5 @@
 import { Directive, ElementRef, OnInit, Input, ViewContainerRef, TemplateRef } from '@angular/core';
-import { HmctsrolesLibService } from '../hmctsroles-lib.service';
+//import { HmctsrolesLibService } from '../hmctsroles-lib.service';
 
 
 @Directive({
@@ -13,11 +13,7 @@ export class UnlessRoleIncludesDirective implements OnInit {
   roles: any;
 
   constructor(
-    private elr: ElementRef,
-    private auth: HmctsrolesLibService
-  ) {
-
-  }
+    private elr: ElementRef) { }
 
 
   ngOnInit() {
@@ -26,7 +22,7 @@ export class UnlessRoleIncludesDirective implements OnInit {
     this.roles = this.roleList.split(',')
 
     authorised = this.checkRoleisValid()
-    //console.log('auth', authorised)
+
     if (authorised)
       this.elr.nativeElement.style.visibility = 'hidden'
 
@@ -34,7 +30,6 @@ export class UnlessRoleIncludesDirective implements OnInit {
       this.elr.nativeElement.style.visibility = 'visible'
 
   }
-
 
 
 

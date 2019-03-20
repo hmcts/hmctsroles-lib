@@ -4,15 +4,13 @@
 
 <h1> **** containing page *** </h1>
 
-<!-- <h1 [unlessRole]="'roleA'"  roleList="['roleA','roleB','roleC']" roleSource="inline">Test unlessRole directive display if false</h1> -->
 
-
-<h1 [unlessRole]="'roleA,roleAB'"  roleList="roleA,roleBx,roleC" roleSource="inline">Test unlessRole directive display if false</h1>
-<h1 [unlessRole]="'roleA,roleAB'"  roleList="{{myRoleList}}" roleSource="inline">Test unlessRole 2</h1>
+<h1 [unlessRole]="'roleA,roleAB'"  roleList="roleA,roleBx,roleC">Test unlessRole directive display if false</h1>
+<h1 [unlessRole]="'roleA,roleAB'"  roleList="{{myRoleList}}">Test unlessRole 2</h1>
 
 
 <hr>
-<h1 *roleAccess="['RoleA'];roleList:['RoleA','RoleB','RoleC'];roleSource:'inline'"  >Test roleAccess directive - display if true</h1>
+<h1 *roleAccess="['RoleA'];roleList:['RoleA','RoleB','RoleC'];"  >Test roleAccess directive - display if true</h1>
 
 
 <h1> **** containing page ****</h1>
