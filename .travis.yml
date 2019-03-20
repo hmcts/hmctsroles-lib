@@ -1,10 +1,25 @@
 language: node_js
 node_js:
-- 8.11.1
+  - "lts/*"
+cache:
+  directories:
+    - node_modules
+sudo: required
+addons:
+  chrome: stable
+apt:
+  sources:
+    - google-chrome
+  packages:
+    - google-chrome-stable
+    - google-chrome-beta
+
 before_deploy:
 - npm i
-- npm run build:package
-- cd dist
+
+script:
+  - npm run build:package
+
 deploy:
   provider: npm
   email: jenkins-reform@HMCTS.NET
