@@ -6,9 +6,7 @@
     "start": "ng serve",
     "test": "ng test",
     "lint": "ng lint",
-    "build_roleslib": "ng build --prod hmctsroles-lib",
-    "npm_pack": "cd dist/hmctsroles-lib && npm pack",
-    "package": "npm run build_roleslib && npm run npm_pack"
+    "build:package": "ng build --prod hmctsroles-lib"
   },
   "private": true,
   "dependencies": {
