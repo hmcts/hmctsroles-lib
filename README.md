@@ -23,13 +23,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng run package`
 
-## Publish to NPM 
-Run  `NPM publish` 
 
 
 ## Directive use
-
-
 #unlessRole
 Displays component / element unless role matches role provided in roleList
 In other words the fefault action is to display unless a match is found
@@ -57,3 +53,51 @@ roleSource  - inline or cookie - this could be a future enhancement where the ro
 &lt; h1 *roleAccess="['xRoleA'];roleList:['RoleA','RoleB','RoleC'];roleSource:'inline'"  &gt; Test roleAccess directive - display if true &lt;/&gt;``
 
 ...
+
+
+#Deployment process to HMCTS NPM
+- Need to make sure your `npm run lint`  works as travis picks it up by default.
+- Create a travis.yml file in @root-project/travis.yml
+- You can use the following if you want and edit for the project
+
+```
+language: node_js
+node_js:
+  - "lts/*"
+cache:
+  directories:
+    - node_modules
+sudo: required
+addons:
+  chrome: stable
+apt:
+  sources:
+    - google-chrome
+  packages:
+    - google-chrome-stable
+    - google-chrome-beta
+
+before_deploy:
+- npm i
+
+script:
+  - npm run build:package
+
+deploy:
+  provider: npm
+  email: jenkins-reform@HMCTS.NET
+  api_key:
+    secure: %YOU_KEY_SHOULD_BE%
+  on:
+    tags: true
+    repo: hmcts/hmctsroles-lib
+```
+
+- You need to push the PR and ask on channel #devops or `Tim J` to update the PR with a API_KEY.
+- Once the initial setup is created and all the test passes you need to create a new release to publish your library.
+
+## Creating a release
+- Go to https://github.com/hmcts/hmctsroles-lib/releases/new
+- Submit and wait.
+
+
