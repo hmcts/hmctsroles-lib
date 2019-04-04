@@ -16,9 +16,8 @@ apt:
 
 before_deploy:
 - npm i
-
-script:
-  - npm run build:package
+- npm run build:package
+- cd dist
 
 deploy:
   provider: npm
