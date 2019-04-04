@@ -79,9 +79,8 @@ apt:
 
 before_deploy:
 - npm i
-
-script:
-  - npm run build:package
+- npm run build:package
+- cd dist
 
 deploy:
   provider: npm
@@ -95,6 +94,7 @@ deploy:
 
 - You need to push the PR and ask on channel #devops or `Tim J` to update the PR with a API_KEY.
 - Once the initial setup is created and all the test passes you need to create a new release to publish your library.
+
 
 ## Creating a release
 - Go to https://github.com/hmcts/hmctsroles-lib/releases/new
