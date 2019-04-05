@@ -1,6 +1,6 @@
 {
-  "name": "hmctsroles-lib-app",
-  "version": "0.0.6",
+  "name": "@hmcts/hmctsroles-lib",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
