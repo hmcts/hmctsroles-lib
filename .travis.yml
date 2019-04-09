@@ -11,6 +11,13 @@ before_deploy:
   - npm run build:package
   - cd dist
 
+notifications:
+  email:
+    recipients:
+      - chris.tarasovs@hmcts.net
+    on_success: change
+    on_failure: always
+
 deploy:
   provider: npm
   email: jenkins-reform@HMCTS.NET
