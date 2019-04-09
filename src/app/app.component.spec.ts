@@ -1,6 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { HmctsrolesLibModule } from 'hmctsroles-lib';
+import {HmctsrolesLibModule} from '../../projects/hmctsroles-lib/src/lib/hmctsroles-lib.module';
+
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
