@@ -8,6 +8,9 @@
     "lint": "ng lint",
     "build:package": "ng build --prod hmctsroles-lib"
   },
+  "files": [
+    "dist/"
+  ],
   "private": false,
   "dependencies": {
     "@angular/animations": "6.1.0",
