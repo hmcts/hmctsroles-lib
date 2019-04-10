@@ -1,6 +1,6 @@
 {
   "name": "@hmcts/hmctsroles-lib",
-  "version": "2.0.3",
+  "version": "3.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,6 +11,9 @@
   "files": [
     "dist/"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "private": false,
   "dependencies": {
     "@angular/animations": "6.1.0",
