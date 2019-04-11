@@ -1,16 +1,20 @@
 {
   "name": "@hmcts/hmctsroles-lib",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "test": "ng test --project=hmctsroles-lib --watch=false",
     "lint": "ng lint",
-    "build:package": "ng build --prod hmctsroles-lib"
+    "release": "npm run release:prepare && npm run release:build && npm run release:tag",
+    "release:prepare": "standard-version",
+    "release:build": "ng build --prod hmctsroles-lib",
+    "release:tag": "git push --follow-tags origin master"
   },
   "files": [
-    "dist/"
+    "dist"
   ],
+  "main": "dist/public_api.d.ts",
   "publishConfig": {
     "access": "public"
   },
@@ -49,6 +53,7 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "ng-packagr": "^3.0.0",
     "protractor": "5.4.2",
+    "standard-version": "^5.0.2",
     "ts-node": "8.0.3",
     "tsickle": ">=0.29.0",
     "tslib": "^1.9.0",
