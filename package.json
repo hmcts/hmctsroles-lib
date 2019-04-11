@@ -12,7 +12,17 @@
     "release:tag": "git push --follow-tags origin master"
   },
   "files": [
-    "dist"
+    "dist/*",
+    "bundles",
+    "esm5",
+    "esm2015",
+    "fesm5",
+    "fesm2015",
+    "lib",
+    "hmcts-hmctsroles-lib.d.ts",
+    "hmcts-hmctsroles-lib.metadata.json",
+    "package.json",
+    "public_api.d.ts"
   ],
   "main": "dist/public_api.d.ts",
   "publishConfig": {
