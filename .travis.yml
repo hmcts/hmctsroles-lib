@@ -17,7 +17,7 @@ apt:
 
 before_deploy:
   - npm i
-  - npm run release
+  - npm run release:build
 
 notifications:
   email:
