@@ -9,8 +9,9 @@
     "build:package": "ng build --prod hmctsroles-lib"
   },
   "files": [
-    "dist/"
+    "dist"
   ],
+  "main":  "dist/public_api.d.ts",
   "publishConfig": {
     "access": "public"
   },
