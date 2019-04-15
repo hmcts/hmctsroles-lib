@@ -1,21 +1,21 @@
 {
   "name": "@hmcts/hmctsroles-lib",
-  "version": "3.0.6",
+  "version": "3.0.8",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
   },
   "files": [
-    "dist/bundles",
-    "dist/esm5",
-    "dist/esm2015",
-    "dist/fesm5",
-    "dist/fesm2015",
-    "dist/lib",
-    "dist/hmcts-hmctsroles-lib.d.ts",
-    "dist/hmcts-hmctsroles-lib.metadata.json",
-    "dist/package.json",
-    "dist/public_api.d.ts"
+    "bundles",
+    "esm5",
+    "esm2015",
+    "fesm5",
+    "fesm2015",
+    "lib",
+    "hmcts-hmctsroles-lib.d.ts",
+    "hmcts-hmctsroles-lib.metadata.json",
+    "package.json",
+    "public_api.d.ts"
   ],
   "main": "dist/public_api.d.ts",
   "author": "HCMTS"
